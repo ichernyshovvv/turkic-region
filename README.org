@@ -1,0 +1,36 @@
+#+html: <div align=center><img width='250em' src='logo.png'>
+#+html: <h2 align=center>turkic-region</h2>
+#+html: <p>Obfuscate buffer content</p></div>
+
+[[file:screenshot.png]]
+
+* Installation
+:PROPERTIES:
+:CUSTOM_ID: installation
+:END:
+
+#+begin_src elisp
+(use-package turkic-region
+  :init
+  (unless (package-installed-p 'turkic-region)
+    (package-vc-install
+     '(turkic-region
+       :vc-backend Git
+       :url "https://github.com/ichernyshovvv/turkic-region"
+       :branch "master"))))
+#+end_src
+
+* Usage
+
+- =M-x turkic-region=
+- =M-x turkic-region-undo=
+
+* Donations
+:PROPERTIES:
+:CUSTOM_ID: donations
+:END:
+
+- [[https://liberapay.com/ichernyshovvv][liberapay.com/ichernyshovvv]]
+- [[https://boosty.to/ichernyshovvv][boosty.to/ichernyshovvv]]
+- Monero:
+  ~444GDw7rkd3Mj5hi6ZzEXZ4QN565TFw4J5ithFcywsMnJn7dFsxWTEQ4vtSMQC1sckFBu7neS8yZZRLnY8EYpS4UNMEAvpL~
